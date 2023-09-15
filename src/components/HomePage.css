@@ -1,17 +1,17 @@
+body {
+  margin: 0;
+}
+
 .homepage {
-    text-align: center;
-  }
-  
-  header {
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  main section {
-    margin-bottom: 20px;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameContainer h1 {
+  font-size: 3em;
+  margin: 0;
+}

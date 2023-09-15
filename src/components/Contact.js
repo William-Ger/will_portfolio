@@ -1,15 +1,26 @@
 import React from 'react';
 import './Contact.css';
 
-const Contact = () => {
+function Contact() {
   return (
-    <div className="contact-details">
-  <p>Email: <a href="willgerstung@gmail.com">willgerstung@gmail.com</a></p>
-  <p>Phone: 630-209-5648</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/william-gerstung/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/william-gerstung/</a></p>
-  <p>GitHub: <a href="https://github.com/William-Ger" target="_blank" rel="noopener noreferrer">https://github.com/William-Ger</a></p>
-</div>
+    <div className="contact">
+      <h1>Contact</h1>
+      
+      <div className="contactDetails">
+        <p>Phone: (630) 209-564</p>
+        <p>Email: willgerstung@gmail.com</p>
+        <p>
+          LinkedIn: 
+          <a href="https://www.linkedin.com/in/william-gerstung/" target="_blank" rel="noopener noreferrer">william-gerstung</a>
+        </p>
+        <p>
+          GitHub: 
+          <a href="https://github.com/William-Ger" target="_blank" rel="noopener noreferrer">William-Ger</a>
+        </p>
+      </div>
+    </div>
   );
-};
+}
 
 export default Contact;
+

@@ -1,13 +1,18 @@
 import React from 'react';
 import './AboutMe.css';
 
-const AboutMe = () => {
+function AboutMe() {
   return (
-    <div className="about-me">
-      <h2>About Me</h2>
-      <p>Write a detailed description about yourself here. Include information about your background, experiences, and skills.</p>
+    <div className="aboutMe">
+      <h1>About Me</h1>
+      <p>
+      Greetings, <br></br>I am a focused data analyst with an interest in machine learning. 
+      Specializing in extracting valuable insights from complex data sets, I am dedicated to aiding informed decision-making and driving business strategies. 
+      I am eager to employ my analytical skills in a role where I can not only interpret data but use it to forecast future trends through innovative and efficient machine learning models.
+      Seeking opportunities to leverage my expertise and contribute to a forward-thinking team.
+      </p>
     </div>
   );
-};
+}
 
 export default AboutMe;

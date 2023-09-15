@@ -1,4 +1,4 @@
-.aboutMe {
+.projects {
   padding: 20px;
   background-color: #f0f0f0;
   color: #333;
@@ -7,14 +7,28 @@
   border-radius: 10px;
 }
 
-.aboutMe h1 {
+.projects h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
   color: #2c3e50;
 }
 
-.aboutMe p {
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects li {
+  margin: 10px 0;
   font-size: 1.2em;
-  line-height: 1.6;
+}
+
+.projects a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  text-decoration: underline;
 }

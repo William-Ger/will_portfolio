@@ -14,7 +14,7 @@ This is my personal portfolio website built using React. It showcases my project
 
 ## Demo
 
-You can view the live demo of my portfolio website at [willgerstung.com](https://www.your-domain.com).
+You can view the live demo of my portfolio website at [willgerstung.com](https://willgerstung.com).
 
 ## Technologies Used
 

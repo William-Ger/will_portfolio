@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div className="homepage">
       <div className="nameContainer">
-        <h1>William Gerstung</h1>
+      <h1 className="initial">William Gerstung</h1>
       </div>
     </div>
   );

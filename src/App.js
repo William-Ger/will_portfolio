@@ -5,7 +5,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/NavBar'; 
-import './App.css';
+
 
 function App() {
   return (

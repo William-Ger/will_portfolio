@@ -1,18 +1,21 @@
 .projects {
-  padding: 20px;
-  background-color: #f0f0f0;
-  color: #333;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px; /* 20px vertical padding, 40px horizontal padding */
+  border-radius: 12px; /* Rounded corners */
+  width: 100%; /* Full width */
+  max-width: 800px; /* Max width of 800px */
+  margin: auto; /* Center the container */
 }
 
 .projects h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
-  color: #2c3e50;
+  color: #e6e6e6;
 }
 
 .projects ul {
@@ -21,12 +24,13 @@
 }
 
 .projects li {
+  color: #e6e6e6;
   margin: 10px 0;
   font-size: 1.2em;
 }
 
 .projects a {
-  color: #3498db;
+  color: #0e87d7;
   text-decoration: none;
 }
 

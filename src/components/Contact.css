@@ -1,10 +1,9 @@
 .contact {
+  margin: auto; /* Center the container */
   padding: 20px;
-  background-color: #f0f0f0;
-  color: #333;
+  color: #000000;
   min-height: 100vh;
   max-width: 800px;
-  margin: 0 auto;
   border-radius: 10px;
 }
 
@@ -12,19 +11,21 @@
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
-  color: #2c3e50;
+  color: #e6e6e6;
 }
 
 .contactDetails {
+  color: #e6e6e6;
   margin-top: 20px;
 }
 
 .contactDetails p {
+  color: #e6e6e6;
   margin: 10px 0;
 }
 
 .contactDetails a {
-  color: #3498db;
+  color: #0885d8;
   text-decoration: none;
 }
 

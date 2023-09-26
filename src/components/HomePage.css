@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+
 body {
   margin: 0;
+  font-family: 'Fira Mono', monospace;
+  background-color: yourBackgroundColorHere; /* replace with your background color */
 }
 
 .homepage {
-  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
-  color: #d4d4d4;
+  color: #e6e6e6;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -14,4 +17,17 @@ body {
 .nameContainer h1 {
   font-size: 3em;
   margin: 0;
+  font-weight: bold;
 }
+
+.nameContainer h1.initial {
+  opacity: 0;
+  animation: appear 3s forwards;  /* animation will end at last keyframe and hold the style */
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+

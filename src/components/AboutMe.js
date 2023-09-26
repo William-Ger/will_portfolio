@@ -8,7 +8,8 @@ function AboutMe() {
       <StarBackground /> 
       <h1>About Me</h1>
       <p>
-      <br></br>With a bachelor's degree in Business Analytics and Information Systems, I thrive on tackling complex problems.
+      Recent graduate from The University of Iowa, with a degree in business analytics and information systems. I have interests in machine learning and leveraging the capabilities
+      of LLMs. I enjoy working on side projects and creating tools from data. Please take a look at my <a href="https://willgerstung.com/projects">projects</a> to see my skills and capabilites.
       </p>
     </div>
   );

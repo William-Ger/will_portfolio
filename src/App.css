@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Arial, sans-serif';
+  font-family: 'Fira, sans-serif';
 }
 
 a {
@@ -11,5 +11,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-/* Other global styles can go here */

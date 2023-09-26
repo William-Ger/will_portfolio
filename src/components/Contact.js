@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import ContactForm from './ContactForm';
 
 function Contact() {
   return (
@@ -7,7 +8,6 @@ function Contact() {
       <h1>Contact</h1>
       
       <div className="contactDetails">
-        <p>Phone: (630) 209-564</p>
         <p>Email: willgerstung@gmail.com</p>
         <p>
           LinkedIn: 
@@ -17,6 +17,7 @@ function Contact() {
           GitHub: 
           <a href="https://github.com/William-Ger" target="_blank" rel="noopener noreferrer">William-Ger</a>
         </p>
+        <ContactForm />
       </div>
     </div>
   );

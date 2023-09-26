@@ -1,0 +1,34 @@
+/* ContactForm.css */
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    height: 50vh;           
+    width: 100%;             
+    box-sizing: border-box;  
+}
+
+form {
+    max-width: 300px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px;              
+}
+
+/* New Styles */
+label {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center items horizontally */
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;            /* Full width of the parent (label) */
+    margin-top: 5px;        /* Spacing between label and input/textarea */
+}
+

@@ -46,3 +46,10 @@
   cursor: pointer;
   z-index: 1000; /* Ensure it appears above other elements */
 }
+
+/* Change font size for mobile */
+@media (max-width: 480px) {
+  .text {
+    font-size: 10px;
+  }
+}

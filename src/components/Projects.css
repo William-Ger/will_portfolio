@@ -4,8 +4,6 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  padding: 20px 40px; /* 20px vertical padding, 40px horizontal padding */
-  border-radius: 12px; /* Rounded corners */
   width: 100%; /* Full width */
   max-width: 800px; /* Max width of 800px */
   margin: auto; /* Center the container */

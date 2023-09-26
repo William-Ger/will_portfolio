@@ -1,10 +1,12 @@
 import React from 'react';
 import './Contact.css';
 import ContactForm from './ContactForm';
+import StarBackground from './starbackground'; 
 
 function Contact() {
   return (
     <div className="contact">
+      <StarBackground /> 
       <h1>Contact</h1>
       
       <div className="contactDetails">

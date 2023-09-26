@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Projects.css';
+import StarBackground from './starbackground'; 
 
 function Projects() {
   const [repos, setRepos] = useState([]);
@@ -20,6 +21,7 @@ function Projects() {
 
   return (
     <div className="projects">
+      <StarBackground /> 
       <h1>My Projects</h1>
       <ul>
         {repos.map((repo) => (

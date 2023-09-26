@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
-
 body {
   margin: 0;
-  font-family: 'Fira Mono', monospace;
   background-color: yourBackgroundColorHere; /* replace with your background color */
 }
 

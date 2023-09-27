@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Projects.css';
+import { Link } from 'react-router-dom';
 import StarBackground from './starbackground'; 
 
 function Projects() {
@@ -33,6 +34,9 @@ function Projects() {
           </li>
         ))}
       </ul>
+      <div className="contactButton">
+        <Link to="/contact">Contact Me</Link>
+      </div>
     </div>
   );
 }

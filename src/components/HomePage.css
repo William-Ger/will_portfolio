@@ -8,20 +8,39 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column; /* changed from row to column */
   justify-content: center;
   align-items: center;
 }
 
-.nameContainer h1 {
-  font-size: 3em;
+.nameContainer h1, .welcomeContainer, .aboutMeButton {
   text-align: center;
   margin: 0;
+  opacity: 0;
+  animation: appear 3s forwards;
+}
+
+.nameContainer h1 {
+  font-size: 3em;
   font-weight: bold;
 }
 
-.nameContainer h1.initial {
+.aboutButton {
+  text-align: center;
+  margin: 0;
   opacity: 0;
-  animation: appear 3s forwards;  /* animation will end at last keyframe and hold the style */
+  animation: appear 3s forwards;
+  animation-delay: 2s;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.welcomeContainer p {
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  animation: appear 3s forwards;
+  animation-delay: 1s;
 }
 
 @keyframes appear {
@@ -29,4 +48,3 @@ body {
     opacity: 1;
   }
 }
-

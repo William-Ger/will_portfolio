@@ -25,6 +25,22 @@
   text-align: center;
 }
 
+.projectsButton {
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  animation: appear 2s forwards;
+  animation-delay: 3s;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
 /* Change font size for mobile */
 @media (max-width: 480px) {
   .text {

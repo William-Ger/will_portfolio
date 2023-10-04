@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { fetchReport } from './api.js';
 import './api.css';
 
 function ApiPage() {
@@ -8,7 +7,19 @@ function ApiPage() {
 
   const handleFetchReport = async () => {
     try {
-      const data = await fetchReport({ input: inputData });
+      const response = await fetch('/api/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ input: inputData }),
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      const data = await response.json();
       setReport(data);
     } catch (error) {
       console.error('Fetching report failed:', error);
@@ -17,12 +28,11 @@ function ApiPage() {
 
   return (
     <div className="apiPageContainer">
-      <div className="centerContainer">
+      <div className="inputContainer">
         <input
           type="text"
           value={inputData}
           onChange={(e) => setInputData(e.target.value)}
-          placeholder="Enter input here" // Optional placeholder text
         />
         <button onClick={handleFetchReport}>Get Report</button>
       </div>

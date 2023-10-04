@@ -5,6 +5,8 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/NavBar'; 
+import ApiPage from './components/apipage';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/api" element={<ApiPage />} />
       </Routes>
     </Router>
   );

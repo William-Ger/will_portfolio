@@ -18,13 +18,14 @@ function ApiPage() {
       if (!response.ok) {
         throw new Error(`Request failed with status ${response.status}`);
       }
-
+  
       const data = await response.json();
       setReport(data);
     } catch (error) {
       console.error('Fetching report failed:', error);
     }
   };
+  
 
   return (
     <div className="apiPageContainer">

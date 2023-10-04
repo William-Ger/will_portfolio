@@ -1,11 +1,13 @@
-const fetch = require('node-fetch');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
-module.exports = {
-    '/api': {
-      target: 'https://ai-therapist-api.vercel.app', // Replace with your API URL
-      changeOrigin: true,
-      pathRewrite: {
-        '^/api': '', // Remove the /api prefix when forwarding the request
-      },
-    },
-  };
+module.exports = function (app) {
+  // Define the proxy table here
+  app.use(
+    '/api', // This is the URL path that will trigger the proxy
+    createProxyMiddleware({
+      target: 'https://ai-therapist-api.vercel.app', // Replace with the correct URL of your API
+      changeOrigin: true, // Change the origin of the request to match the target URL
+      secure: false, // Disable SSL verification if necessary (only for development)
+    })
+  );
+};

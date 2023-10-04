@@ -12,7 +12,7 @@ def handler(request):
         return {
             'statusCode': 200,
             'headers': {
-                'Access-Control-Allow-Origin': '*',  # Allow requests from any origin
+                'Access-Control-Allow-Origin': 'https://willgerstung.com', 
                 'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',  # Specify allowed HTTP methods
             },
             'body': json.dumps(report_data)

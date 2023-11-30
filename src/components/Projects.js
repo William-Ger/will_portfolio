@@ -38,9 +38,6 @@ function Projects() {
         <div className="contactButton">
           <Link to="/contact">Contact Me</Link>
         </div>
-        <div className="apiButton">  {/* New button for API Page */}
-          <Link to="/api">Check API</Link>
-        </div>
       </div>
     </div>
   );

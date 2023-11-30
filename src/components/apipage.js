@@ -7,7 +7,7 @@ function ApiPage() {
 
   const handleFetchReport = async () => {
     try {
-      const response = await fetch('/api/', {
+      const response = await fetch('/api/proxy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
